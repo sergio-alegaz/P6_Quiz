@@ -3,13 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "heroku local:start",
     "super": "supervisor ./bin/www",
-    "start_old": "node ./bin/www"
-  },
-  "engines": {
-    "node": "8.9.1",
-    "npm": "5.6.0"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.18.2",

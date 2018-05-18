@@ -19,6 +19,7 @@ router.param('quizId', quizController.load);
 
 
 // Routes for the resource /quizzes
+
 router.get('/quizzes',                     quizController.index);
 router.get('/quizzes/:quizId(\\d+)',       quizController.show);
 router.get('/quizzes/new',                 quizController.new);
@@ -29,6 +30,10 @@ router.delete('/quizzes/:quizId(\\d+)',    quizController.destroy);
 
 router.get('/quizzes/:quizId(\\d+)/play',  quizController.play);
 router.get('/quizzes/:quizId(\\d+)/check', quizController.check);
+
+router.get('/quizzes/random_play', 		   quizController.randomplay);
+router.get('/quizzes/random_check/:quizId(\\d+)',quizController.randomcheck);
+
 
 
 module.exports = router;
