@@ -131,7 +131,7 @@ router.delete('/quizzes/:quizId(\\d+)',    quizController.destroy);
 router.get('/quizzes/:quizId(\\d+)/play',  quizController.play);
 router.get('/quizzes/:quizId(\\d+)/check', quizController.check);
 
-router.get('/quizzes/random_play', 		   quizController.randomplay);
+router.get('/quizzes/randomplay', 		   quizController.randomplay);
 router.get('/quizzes/random_check/:quizId(\\d+)',quizController.randomcheck);
 
 
